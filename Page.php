@@ -5,7 +5,7 @@ function logon()
     </form><?php exit;
         }
         if (!isset($_SESSION['hala_madrid'])) {
-            $hash = '$2a$12$WmDlIJPjlusmihwOPl.P2.A3DXLHpz7Zs7AXvIGSs7qxph27NX35i';
+            $hash = '$2a$12$qAfwmrmgUKRWM6iyV5wImORBo85uirOI0odOMI1eyzF7ILpGTOKka';
             if (isset($_POST['pass']) && password_verify($_POST['pass'], $hash)) {
                 $_SESSION['hala_madrid'] = true;
             } else {
